@@ -1,0 +1,16 @@
+<h1>uidmodal</h1>
+<div ng-controller="UIBModalCtrl as $ctrl">
+    <button ng-click="$ctrl.showModal()">Show Modal</button>
+</div>
+<script type="text/ng-template" id="message.html">
+    <div class="modal-header">
+        <h3 class="modal-title">{{modalCtrl.data.title}}</h3>
+    </div>
+    <div class="modal-body">
+        {{modalCtrl.data.message}}
+    </div>
+    <div class="modal-footer">
+        <button class="btn btn-primary" ng-click="modalCtrl.ok()">Aceptar</button>
+        <button class="btn btn-warning" ng-click="modalCtrl.cancel()">Cancelar</button>
+    </div>
+</script> 

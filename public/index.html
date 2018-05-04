@@ -5,25 +5,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <base href="/">
+    <link rel="stylesheet" href="static/bootstrap/dist/css/bootstrap.css">
     <title>Document</title>
 </head>
 <body>
-    <div ng-controller="MainController as main">
-        <h1>Demo <span ng-bind="main.version"></span>&nbsp;<button ng-click="main.showAlert()">Show Alert</button></h1>
-        <a href="/">Home</a>
-        <a href="customer">Customers</a>
-        
-        <div ng-view></div>
+
+    <div class="container">
+
+        <div ng-controller="MainController as main">
+            <h1>Demo <span ng-bind="main.version"></span>&nbsp;<button ng-click="main.showAlert()">Show Alert</button></h1>
+            <a href="/">Home</a>
+            <a href="customer">Customers</a>
+            <a href="uibmodal">uibmodal</a>
+            
+            <div ng-view></div>
+        </div>
+
     </div>
+
     <!-- libraries -->
+    <script src="static/jquery/dist/jquery.js"></script>
+    <script src="static/bootstrap/dist/js/bootstrap.js"></script>
+
+    <!-- Angularjs -->
     <script src="static/angular/angular.js"></script>
     <script src="static/angular-route/angular-route.js"></script>
     <script src="static/angular-resource/angular-resource.js"></script>
+    <script src="static/angular-ui-bootstrap/dist/ui-bootstrap-tpls.js"></script>
 
     <!-- app files -->
     <script src="app/app.js"></script>
     <script src="app/app.controller.js"></script>
     <script src="app/customer/customer.controller.js"></script>
     <script src="app/customer/customer.service.js"></script>
+    <script src="app/uibmodal/uibmodal.controller.js"></script>
+    <script src="app/common/modal-instance.controller.js"></script>
 </body>
 </html>
