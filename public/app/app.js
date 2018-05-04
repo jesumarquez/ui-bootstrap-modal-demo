@@ -2,6 +2,7 @@
     angular.module('app', [
         'ngRoute',
         'ngResource',
+        'ngSanitize',
         'ui.bootstrap',
         'app.common.modal',
         'app.customer',

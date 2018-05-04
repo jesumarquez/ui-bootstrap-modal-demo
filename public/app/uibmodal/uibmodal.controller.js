@@ -18,7 +18,7 @@
                     data: function () {
                         return {
                             title: 'Borrar Silleta',
-                            message: 'Está seguro de borrar la silleta (11111111)?'
+                            message: '<h1>Está seguro de borrar la silleta (11111111)?</h1>'
                         };
                     }
                 }
